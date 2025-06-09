@@ -1,5 +1,5 @@
 # lab7_sass2
-Starter files for CSCI 1720 Lab 7
+## Starter files for CSCI 1720 Lab 7 ##
 
 Archive includes completed HTML files with included navigation.
 

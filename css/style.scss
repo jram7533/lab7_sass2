@@ -1,0 +1,163 @@
+/* style.scss
+  Author:       Jack
+  Date:         2024-06-23
+  Last revised: 2024-06-23
+  Description:  SCSS stylesheet for 
+                'Seven Essentials Project'
+*/
+
+@use 'variables' as *;
+@use 'dimensions' as *;
+
+body {
+  margin: 0;
+  font-family: 'Muli', sans-serif;
+  font-size: 1.4em;
+  background: $background-color;
+  color: $font-color;
+
+  a {
+    text-decoration: none;
+    color: $body-a-color;
+    padding: 0 3px;
+  }
+
+  a:hover {
+    transition: .2s;
+    opacity: 0.6;
+    filter: brightness(150%);
+    background: rgba(100, 100, 100, .2);
+    border-radius: 25px;
+  }
+}  // end of body selector & children
+
+nav {
+  max-width: 100%;
+  background: $nav-color;
+  line-height: 1.6em;
+  padding: .5em;
+
+  a {
+    text-decoration: none;
+    color: $font-color-neg;
+    margin-right: 1em;
+    padding: .3em;
+  }
+
+  a:hover,
+  .active {
+    transition: .2s;
+    filter: hue-rotate(200deg);
+    border-radius: 6px;
+    border-bottom: 1px dashed;
+  }
+}  // end of nav selector & children
+
+p {
+  width: $p-width;
+  background: $paragraph-bg-color;
+  padding: 1em;
+  border-radius: $radius-med;
+}
+
+// Images
+img.sm {
+  width: $image-width-sm;
+}
+
+img.med {
+  width: $image-width-med;
+}
+
+img.lg {
+  width: $image-width-lg;
+}
+
+img.xl {
+  width: $image-width-xl;
+}
+
+img.float-left {
+  display: block;
+  float: $float-left;
+  margin-right: 1em;
+}
+
+img.float-right {
+  display: block;
+  float: $float-right;
+  margin-left: 1em;
+}
+
+// Container
+.container {
+  max-width: $container-width-lg;
+  min-width: $container-width-sm;
+  margin: auto;
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $h-color;
+  text-align: center;
+  font-style: italic;
+  border-bottom: 4px double $h-color;
+  width: 75%;
+  margin: 1em auto;
+}
+
+h2 {
+  border: 0;
+}
+
+// Call to action
+.cta {
+  max-width: 200px;
+  color: $font-color-neg;
+  border-radius: $radius-med;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.8rem;
+  margin: 2em auto;
+  cursor: pointer; 
+
+
+  &::after {
+    content: " \00BB";
+  }
+}
+
+.cta-yellow {
+  @extend .cta;
+  background: $cta-yellow;
+}
+
+.cta-red {
+  @extend .cta;
+  background: $cta-red;
+}
+
+.cta-blue {
+  @extend .cta;
+  background: $cta-blue;
+}
+
+.cta-orange {
+  @extend .cta;
+  background: $cta-orange;
+}
+
+.cta-green {
+  @extend .cta;
+  background: $cta-green;
+}
+
+.cta-purple {
+  @extend .cta;
+  background: $cta-purple;
+}

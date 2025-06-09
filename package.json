@@ -1,0 +1,23 @@
+{
+  "name": "lab7_sass2",
+  "version": "1.0.0",
+  "description": "Starter files for CSCI 1720 Lab 7",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w css/style.scss css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jram7533/lab7_sass2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jram7533/lab7_sass2/issues"
+  },
+  "homepage": "https://github.com/jram7533/lab7_sass2#readme",
+  "devDependencies": {
+    "sass": "^1.89.1"
+  }
+}
